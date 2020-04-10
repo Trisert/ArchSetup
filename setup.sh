@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pacman -S git zsh firefox lightdm lightdm-gtk-greeter
+pacman -S zsh firefox lightdm lightdm-gtk-greeter
 
 systemctl enable lightdm
 
