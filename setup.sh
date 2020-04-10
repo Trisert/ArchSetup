@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pacman -S zsh firefox lightdm lightdm-gtk-greeter
+pacman -S zsh firefox lightdm lightdm-gtk-greeter wget xorg xf86-video-nouveau
 
 systemctl enable lightdm
 
