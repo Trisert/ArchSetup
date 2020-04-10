@@ -1,6 +1,8 @@
 #!/bin/sh
 
-pacman -S git zsh firefox
+pacman -S git zsh firefox lightdm lightdm-gtk-greeter
+
+systemctl enable lightdm
 
 useradd -m -G wheel -s /bin/zsh nicola
 
@@ -43,3 +45,5 @@ wget https://raw.githubusercontent.com/Trisert/dotfiles/master/.zshrc
 wget https://raw.githubusercontent.com/Trisert/dotfiles/master/.vimrc
 
 wget https://raw.githubusercontent.com/Trisert/dotfiles/master/.xinitrc
+
+rm -rf ArchSetup
